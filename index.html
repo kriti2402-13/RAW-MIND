@@ -224,3 +224,37 @@
 </script>
 </body>
 </html>
+<div id="v-logic" class="focus-screen">
+    <div class="content-container">
+        <button class="back-btn" onclick="exitFocus()">⬅ Back to Dashboard</button>
+        <h2>🧩 Logical Reasoning & Analytics</h2>
+        <p>In Forensic exams, logic isn't just about math—it's about <b>Deductive Reasoning</b>. You must move from general rules to specific conclusions.</p>
+        
+        <div class="section-card" style="border-left: 5px solid var(--psych-blue);">
+            <h4>1. Analytical Patterns</h4>
+            <p>Study the relationship between shapes and numbers. Look for rotation, addition of sides, or mirroring.</p>
+            
+        </div>
+
+        <div class="section-card" style="border-left: 5px solid var(--psych-blue);">
+            <h4>2. Syllogisms in Investigation</h4>
+            <p>Example: <i>All fingerprints at the scene are loops. This print is a whorl. Therefore, this print is not from the scene.</i></p>
+            
+        </div>
+
+        <button class="btn-action" onclick="enterFocus('v-quiz')">Practice Logic Questions</button>
+    </div>
+</div>
+
+<script>
+    // --- UPDATED QUIZ BANK (With Logic Questions) ---
+    const quizBank = [
+        {q: "Which BNS section defines 'Punishment for Murder'?", a: ["Section 101", "Section 302", "Section 74", "Section 111"], c: 0},
+        {q: "If 'CRIME' is coded as 'DQJNF', how is 'EVIDENCE' coded?", a: ["FWJEFODF", "FWJDFODF", "FXJEFPEF", "EVJDFODF"], c: 0},
+        {q: "Pointing to a photo, a detective says: 'He is the son of the only son of my grandfather.' Who is the man?", a: ["Brother", "Uncle", "Cousin", "Self/Brother"], c: 3},
+        {q: "All STRs are DNA markers. Some DNA markers are expensive. Are some STRs expensive?", a: ["Yes, definitely", "No", "Maybe (Not logically certain)", "Invalid premise"], c: 2}
+    ];
+
+    // UPDATED DASHBOARD LINK (Add this to your Academia Vault Grid)
+    // <div class="topic-box" onclick="enterFocus('v-logic')">🧩 Logical Reasoning</div>
+</script>
